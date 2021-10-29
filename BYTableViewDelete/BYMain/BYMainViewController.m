@@ -14,7 +14,7 @@ static NSString *const cellID = @"cellID";
 
 @property (nonatomic, strong) UITableView *mainTableView;
 
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, copy) NSArray *dataArray;
 
 @end
 
