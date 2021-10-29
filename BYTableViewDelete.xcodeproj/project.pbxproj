@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78755C23B8C5CF590321F611 /* libPods-BYTableViewDelete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68007C76C372DF4F8F6B31BA /* libPods-BYTableViewDelete.a */; };
+		C1870CCE272AA098006BE1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870CCD272AA098006BE1AF /* AppDelegate.m */; };
+		C1870CD9272AA09B006BE1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1870CD8272AA09B006BE1AF /* Assets.xcassets */; };
+		C1870CDC272AA09B006BE1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1870CDA272AA09B006BE1AF /* LaunchScreen.storyboard */; };
+		C1870CDF272AA09B006BE1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870CDE272AA09B006BE1AF /* main.m */; };
+		C1870CE9272AA09C006BE1AF /* BYTableViewDeleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870CE8272AA09C006BE1AF /* BYTableViewDeleteTests.m */; };
+		C1870CF3272AA09C006BE1AF /* BYTableViewDeleteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870CF2272AA09C006BE1AF /* BYTableViewDeleteUITests.m */; };
+		C1870CF5272AA09C006BE1AF /* BYTableViewDeleteUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870CF4272AA09C006BE1AF /* BYTableViewDeleteUITestsLaunchTests.m */; };
+		C1870D06272AA177006BE1AF /* BYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870D05272AA177006BE1AF /* BYMainViewController.m */; };
+		C1870D0B272AA29F006BE1AF /* UIView+BYViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870D0A272AA29F006BE1AF /* UIView+BYViewFrame.m */; };
+		C1870D0E272AA416006BE1AF /* BYMainDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870D0D272AA416006BE1AF /* BYMainDetailViewController.m */; };
+		C1870D12272AA46E006BE1AF /* BYMainDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870D11272AA46E006BE1AF /* BYMainDetailModel.m */; };
+		C1870D16272AA4B4006BE1AF /* BYMainDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1870D15272AA4B4006BE1AF /* BYMainDetailTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1870CE5272AA09C006BE1AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1870CC1272AA098006BE1AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1870CC8272AA098006BE1AF;
+			remoteInfo = BYTableViewDelete;
+		};
+		C1870CEF272AA09C006BE1AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1870CC1272AA098006BE1AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1870CC8272AA098006BE1AF;
+			remoteInfo = BYTableViewDelete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AF7519E2BF9F55BE23E1B70 /* Pods-BYTableViewDelete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYTableViewDelete.release.xcconfig"; path = "Target Support Files/Pods-BYTableViewDelete/Pods-BYTableViewDelete.release.xcconfig"; sourceTree = "<group>"; };
+		68007C76C372DF4F8F6B31BA /* libPods-BYTableViewDelete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BYTableViewDelete.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1870CC9272AA098006BE1AF /* BYTableViewDelete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BYTableViewDelete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1870CCC272AA098006BE1AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1870CCD272AA098006BE1AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1870CD8272AA09B006BE1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1870CDB272AA09B006BE1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1870CDD272AA09B006BE1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1870CDE272AA09B006BE1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1870CE4272AA09C006BE1AF /* BYTableViewDeleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYTableViewDeleteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1870CE8272AA09C006BE1AF /* BYTableViewDeleteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYTableViewDeleteTests.m; sourceTree = "<group>"; };
+		C1870CEE272AA09C006BE1AF /* BYTableViewDeleteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BYTableViewDeleteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1870CF2272AA09C006BE1AF /* BYTableViewDeleteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYTableViewDeleteUITests.m; sourceTree = "<group>"; };
+		C1870CF4272AA09C006BE1AF /* BYTableViewDeleteUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYTableViewDeleteUITestsLaunchTests.m; sourceTree = "<group>"; };
+		C1870D04272AA177006BE1AF /* BYMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMainViewController.h; sourceTree = "<group>"; };
+		C1870D05272AA177006BE1AF /* BYMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYMainViewController.m; sourceTree = "<group>"; };
+		C1870D07272AA252006BE1AF /* BYHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYHeader.h; sourceTree = "<group>"; };
+		C1870D08272AA25D006BE1AF /* BYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYPrefixHeader.pch; sourceTree = "<group>"; };
+		C1870D09272AA29F006BE1AF /* UIView+BYViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BYViewFrame.h"; sourceTree = "<group>"; };
+		C1870D0A272AA29F006BE1AF /* UIView+BYViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BYViewFrame.m"; sourceTree = "<group>"; };
+		C1870D0C272AA416006BE1AF /* BYMainDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMainDetailViewController.h; sourceTree = "<group>"; };
+		C1870D0D272AA416006BE1AF /* BYMainDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYMainDetailViewController.m; sourceTree = "<group>"; };
+		C1870D10272AA46E006BE1AF /* BYMainDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMainDetailModel.h; sourceTree = "<group>"; };
+		C1870D11272AA46E006BE1AF /* BYMainDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYMainDetailModel.m; sourceTree = "<group>"; };
+		C1870D14272AA4B4006BE1AF /* BYMainDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYMainDetailTableViewCell.h; sourceTree = "<group>"; };
+		C1870D15272AA4B4006BE1AF /* BYMainDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYMainDetailTableViewCell.m; sourceTree = "<group>"; };
+		E497CA5017A944043FEEADB8 /* Pods-BYTableViewDelete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BYTableViewDelete.debug.xcconfig"; path = "Target Support Files/Pods-BYTableViewDelete/Pods-BYTableViewDelete.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1870CC6272AA098006BE1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78755C23B8C5CF590321F611 /* libPods-BYTableViewDelete.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CE1272AA09C006BE1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CEB272AA09C006BE1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE25C7A6CCFCF59050A9B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68007C76C372DF4F8F6B31BA /* libPods-BYTableViewDelete.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3695EF4C9BD30FE7712902E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E497CA5017A944043FEEADB8 /* Pods-BYTableViewDelete.debug.xcconfig */,
+				4AF7519E2BF9F55BE23E1B70 /* Pods-BYTableViewDelete.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1870CC0272AA098006BE1AF = {
+			isa = PBXGroup;
+			children = (
+				C1870CCB272AA098006BE1AF /* BYTableViewDelete */,
+				C1870CE7272AA09C006BE1AF /* BYTableViewDeleteTests */,
+				C1870CF1272AA09C006BE1AF /* BYTableViewDeleteUITests */,
+				C1870CCA272AA098006BE1AF /* Products */,
+				3695EF4C9BD30FE7712902E8 /* Pods */,
+				2EE25C7A6CCFCF59050A9B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1870CCA272AA098006BE1AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1870CC9272AA098006BE1AF /* BYTableViewDelete.app */,
+				C1870CE4272AA09C006BE1AF /* BYTableViewDeleteTests.xctest */,
+				C1870CEE272AA09C006BE1AF /* BYTableViewDeleteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1870CCB272AA098006BE1AF /* BYTableViewDelete */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D03272AA156006BE1AF /* BYMacro */,
+				C1870D02272AA155006BE1AF /* BYMain */,
+				C1870D01272AA154006BE1AF /* BYCategory */,
+				C1870CCC272AA098006BE1AF /* AppDelegate.h */,
+				C1870CCD272AA098006BE1AF /* AppDelegate.m */,
+				C1870CD8272AA09B006BE1AF /* Assets.xcassets */,
+				C1870CDA272AA09B006BE1AF /* LaunchScreen.storyboard */,
+				C1870CDD272AA09B006BE1AF /* Info.plist */,
+				C1870CDE272AA09B006BE1AF /* main.m */,
+			);
+			path = BYTableViewDelete;
+			sourceTree = "<group>";
+		};
+		C1870CE7272AA09C006BE1AF /* BYTableViewDeleteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1870CE8272AA09C006BE1AF /* BYTableViewDeleteTests.m */,
+			);
+			path = BYTableViewDeleteTests;
+			sourceTree = "<group>";
+		};
+		C1870CF1272AA09C006BE1AF /* BYTableViewDeleteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1870CF2272AA09C006BE1AF /* BYTableViewDeleteUITests.m */,
+				C1870CF4272AA09C006BE1AF /* BYTableViewDeleteUITestsLaunchTests.m */,
+			);
+			path = BYTableViewDeleteUITests;
+			sourceTree = "<group>";
+		};
+		C1870D01272AA154006BE1AF /* BYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D09272AA29F006BE1AF /* UIView+BYViewFrame.h */,
+				C1870D0A272AA29F006BE1AF /* UIView+BYViewFrame.m */,
+			);
+			path = BYCategory;
+			sourceTree = "<group>";
+		};
+		C1870D02272AA155006BE1AF /* BYMain */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D13272AA4A0006BE1AF /* View */,
+				C1870D0F272AA45F006BE1AF /* Model */,
+				C1870D04272AA177006BE1AF /* BYMainViewController.h */,
+				C1870D05272AA177006BE1AF /* BYMainViewController.m */,
+				C1870D0C272AA416006BE1AF /* BYMainDetailViewController.h */,
+				C1870D0D272AA416006BE1AF /* BYMainDetailViewController.m */,
+			);
+			path = BYMain;
+			sourceTree = "<group>";
+		};
+		C1870D03272AA156006BE1AF /* BYMacro */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D07272AA252006BE1AF /* BYHeader.h */,
+				C1870D08272AA25D006BE1AF /* BYPrefixHeader.pch */,
+			);
+			path = BYMacro;
+			sourceTree = "<group>";
+		};
+		C1870D0F272AA45F006BE1AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D10272AA46E006BE1AF /* BYMainDetailModel.h */,
+				C1870D11272AA46E006BE1AF /* BYMainDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1870D13272AA4A0006BE1AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1870D14272AA4B4006BE1AF /* BYMainDetailTableViewCell.h */,
+				C1870D15272AA4B4006BE1AF /* BYMainDetailTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1870CC8272AA098006BE1AF /* BYTableViewDelete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1870CF8272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDelete" */;
+			buildPhases = (
+				D874F9317534E3604B3DE169 /* [CP] Check Pods Manifest.lock */,
+				C1870CC5272AA098006BE1AF /* Sources */,
+				C1870CC6272AA098006BE1AF /* Frameworks */,
+				C1870CC7272AA098006BE1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BYTableViewDelete;
+			productName = BYTableViewDelete;
+			productReference = C1870CC9272AA098006BE1AF /* BYTableViewDelete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1870CE3272AA09C006BE1AF /* BYTableViewDeleteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1870CFB272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDeleteTests" */;
+			buildPhases = (
+				C1870CE0272AA09C006BE1AF /* Sources */,
+				C1870CE1272AA09C006BE1AF /* Frameworks */,
+				C1870CE2272AA09C006BE1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1870CE6272AA09C006BE1AF /* PBXTargetDependency */,
+			);
+			name = BYTableViewDeleteTests;
+			productName = BYTableViewDeleteTests;
+			productReference = C1870CE4272AA09C006BE1AF /* BYTableViewDeleteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1870CED272AA09C006BE1AF /* BYTableViewDeleteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1870CFE272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDeleteUITests" */;
+			buildPhases = (
+				C1870CEA272AA09C006BE1AF /* Sources */,
+				C1870CEB272AA09C006BE1AF /* Frameworks */,
+				C1870CEC272AA09C006BE1AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1870CF0272AA09C006BE1AF /* PBXTargetDependency */,
+			);
+			name = BYTableViewDeleteUITests;
+			productName = BYTableViewDeleteUITests;
+			productReference = C1870CEE272AA09C006BE1AF /* BYTableViewDeleteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1870CC1272AA098006BE1AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C1870CC8272AA098006BE1AF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C1870CE3272AA09C006BE1AF = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C1870CC8272AA098006BE1AF;
+					};
+					C1870CED272AA09C006BE1AF = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C1870CC8272AA098006BE1AF;
+					};
+				};
+			};
+			buildConfigurationList = C1870CC4272AA098006BE1AF /* Build configuration list for PBXProject "BYTableViewDelete" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1870CC0272AA098006BE1AF;
+			productRefGroup = C1870CCA272AA098006BE1AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1870CC8272AA098006BE1AF /* BYTableViewDelete */,
+				C1870CE3272AA09C006BE1AF /* BYTableViewDeleteTests */,
+				C1870CED272AA09C006BE1AF /* BYTableViewDeleteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1870CC7272AA098006BE1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1870CDC272AA09B006BE1AF /* LaunchScreen.storyboard in Resources */,
+				C1870CD9272AA09B006BE1AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CE2272AA09C006BE1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CEC272AA09C006BE1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D874F9317534E3604B3DE169 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BYTableViewDelete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1870CC5272AA098006BE1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1870D12272AA46E006BE1AF /* BYMainDetailModel.m in Sources */,
+				C1870D0B272AA29F006BE1AF /* UIView+BYViewFrame.m in Sources */,
+				C1870CCE272AA098006BE1AF /* AppDelegate.m in Sources */,
+				C1870D0E272AA416006BE1AF /* BYMainDetailViewController.m in Sources */,
+				C1870CDF272AA09B006BE1AF /* main.m in Sources */,
+				C1870D06272AA177006BE1AF /* BYMainViewController.m in Sources */,
+				C1870D16272AA4B4006BE1AF /* BYMainDetailTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CE0272AA09C006BE1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1870CE9272AA09C006BE1AF /* BYTableViewDeleteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1870CEA272AA09C006BE1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1870CF5272AA09C006BE1AF /* BYTableViewDeleteUITestsLaunchTests.m in Sources */,
+				C1870CF3272AA09C006BE1AF /* BYTableViewDeleteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1870CE6272AA09C006BE1AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1870CC8272AA098006BE1AF /* BYTableViewDelete */;
+			targetProxy = C1870CE5272AA09C006BE1AF /* PBXContainerItemProxy */;
+		};
+		C1870CF0272AA09C006BE1AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1870CC8272AA098006BE1AF /* BYTableViewDelete */;
+			targetProxy = C1870CEF272AA09C006BE1AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1870CDA272AA09B006BE1AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1870CDB272AA09B006BE1AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1870CF6272AA09C006BE1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1870CF7272AA09C006BE1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1870CF9272AA09C006BE1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E497CA5017A944043FEEADB8 /* Pods-BYTableViewDelete.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BYTableViewDelete/BYMacro/BYPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BYTableViewDelete/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDelete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1870CFA272AA09C006BE1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF7519E2BF9F55BE23E1B70 /* Pods-BYTableViewDelete.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BYTableViewDelete/BYMacro/BYPrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BYTableViewDelete/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDelete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1870CFC272AA09C006BE1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDeleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BYTableViewDelete.app/BYTableViewDelete";
+			};
+			name = Debug;
+		};
+		C1870CFD272AA09C006BE1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDeleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BYTableViewDelete.app/BYTableViewDelete";
+			};
+			name = Release;
+		};
+		C1870CFF272AA09C006BE1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDeleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BYTableViewDelete;
+			};
+			name = Debug;
+		};
+		C1870D00272AA09C006BE1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binSty.mac.BYTableViewDeleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BYTableViewDelete;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1870CC4272AA098006BE1AF /* Build configuration list for PBXProject "BYTableViewDelete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1870CF6272AA09C006BE1AF /* Debug */,
+				C1870CF7272AA09C006BE1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1870CF8272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDelete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1870CF9272AA09C006BE1AF /* Debug */,
+				C1870CFA272AA09C006BE1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1870CFB272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDeleteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1870CFC272AA09C006BE1AF /* Debug */,
+				C1870CFD272AA09C006BE1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1870CFE272AA09C006BE1AF /* Build configuration list for PBXNativeTarget "BYTableViewDeleteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1870CFF272AA09C006BE1AF /* Debug */,
+				C1870D00272AA09C006BE1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1870CC1272AA098006BE1AF /* Project object */;
+}

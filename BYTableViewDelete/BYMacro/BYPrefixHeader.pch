@@ -1,0 +1,19 @@
+//
+//  BYPrefixHeader.pch
+//  BYTableViewDelete
+//
+//  Created by YD_Dev_BinY on 2021/10/28.
+//
+
+#ifndef BYPrefixHeader_pch
+#define BYPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "BYHeader.h"
+#import <Masonry/Masonry.h>
+#import "UIView+BYViewFrame.h"
+#import <MJExtension/MJExtension.h>
+
+#endif /* BYPrefixHeader_pch */
