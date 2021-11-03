@@ -57,7 +57,7 @@ static NSString *const cellID = @"cellID";
 
 - (UITableView *)mainTableView {
     if (!_mainTableView) {
-        _mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, NavigationBarHeight, kScreenW, kScreenH)];
+        _mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, NavigationBarHeight, kScreenW, kScreenH - NavigationBarHeight - BYSafeBottomMagin)];
         _mainTableView.delegate = self;
         _mainTableView.dataSource = self;
         if (@available(iOS 11.0, *)) {
