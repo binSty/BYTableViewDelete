@@ -25,7 +25,7 @@
     [self.contentView addSubview:self.cellContentBackView];
     
     self.cellTipImg = [[UIImageView alloc] init];
-    self.cellTipImg.image = [UIImage imageNamed:@"msgLisitInsideTip"];
+    self.cellTipImg.backgroundColor = [UIColor lightGrayColor];
     self.cellTipImg.contentMode = UIViewContentModeScaleAspectFill;
     self.cellTipImg.clipsToBounds = YES;
     self.cellTipImg.layer.cornerRadius = 11*KYY;

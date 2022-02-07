@@ -41,7 +41,6 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
     self.detailTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.detailTableView.estimatedRowHeight = 70*KYY;
     self.detailTableView.rowHeight = UITableViewAutomaticDimension;
-    [self.detailTableView registerClass:[BYMainDetailTableViewCell class] forCellReuseIdentifier:cellID];
     if (@available(iOS 11.0, *)) {
         self.detailTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
@@ -62,9 +61,9 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
 - (void)_setDataInit {
     NSArray *arrData = @[
         @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"1", @"contentText": @"各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便…"},
-                        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"0", @"contentText": @"各位好，新业务系统版本更新"},
-                        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"1", @"contentText": @"各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便…"},
-                        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"1", @"contentText": @"各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便…"}
+        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"0", @"contentText": @"各位好，新业务系统版本更新"},
+        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"1", @"contentText": @"各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便…"},
+        @{@"timeText": @"2021.5.26 11:04", @"roundImg": @"1", @"contentText": @"各位好，新业务系统版本更新，系统更新需要30分钟，更新时间从18:30到19:00，届时请大家暂停下手头上的系统操作，保存好各自的数据。给大家带来不便…"}
       ];
     for (NSDictionary *dict in arrData) {
         BYMainDetailModel *model = [BYMainDetailModel mj_objectWithKeyValues:dict];
@@ -97,8 +96,10 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
         }
         completionHandler(YES);
     }];
+//    action.image = [UIImage imageNamed:@"tab_home"];
     action.backgroundColor = UIColorFromRGB(0xC9C6CC);
     UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[action]];
+    /// 控制是否可以左滑到头删除当前cell，默认为YES
 //    config.performsFirstActionWithFullSwipe = NO;
     self.editingIndexPath = indexPath;
     [self.view setNeedsLayout];
@@ -115,7 +116,7 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
     self.editingIndexPath = nil;
 }
 
-// 设置左滑菜单按钮的样式
+/// 设置左滑菜单按钮的样式
 - (void)setupSlideBtn {
     if (@available(iOS 13.0, *)) {
         for (UIView *subView in self.detailTableView.subviews) {
@@ -146,6 +147,7 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
     }
 }
 
+/// 系统默认的侧滑删除高度是和cell等高的,修改样式
 - (void)setupRowActionViewInit:(UIView *)rowActionView {
     CGRect frame = rowActionView.frame;
     if (self.editingIndexPath == nil) {
@@ -162,6 +164,7 @@ static NSString *cellID = @"BYMsgDetailTableViewCell";
     rowActionView.frame = frame;
     UIButton *button = rowActionView.subviews.firstObject;
     [button setTitle:@"删除" forState:UIControlStateNormal];
+//    [button setImage:[UIImage imageNamed:@"tab_home"] forState:UIControlStateNormal];
     button.titleLabel.font = UIDEFAULTFONTSIZE(16);
 }
 
